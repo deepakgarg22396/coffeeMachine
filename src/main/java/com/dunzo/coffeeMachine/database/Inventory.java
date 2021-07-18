@@ -5,14 +5,22 @@ import com.dunzo.coffeeMachine.model.Beverage;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * This class is responsible for storing all the inventory.
+ * It acts as a local DB
+ */
 public class Inventory {
 
-    private Map<String, Integer> inventoryMap = new HashMap<>();
+    private final Map<String, Integer> inventoryMap = new HashMap<>();
     private static Inventory inventory;
 
     private Inventory() {
     }
 
+    /**
+     * following singleton pattern here as this class needs to be instantiated only once
+     * @return Instance of Inventory class
+     */
     public static Inventory getInstance() {
         if(inventory==null) {
             synchronized (Inventory.class) {

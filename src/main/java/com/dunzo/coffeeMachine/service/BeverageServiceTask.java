@@ -3,6 +3,9 @@ package com.dunzo.coffeeMachine.service;
 import com.dunzo.coffeeMachine.database.Inventory;
 import com.dunzo.coffeeMachine.model.Beverage;
 
+/**
+ * Beverages services class which creates beverages
+ */
 public class BeverageServiceTask implements Runnable {
 
     private final Beverage beverage;

@@ -11,6 +11,9 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
+/**
+ *  This is the main service class responsible for creating beverages
+ */
 public class CoffeeMachineService {
 
     private static CoffeeMachineService coffeeMachineService;
